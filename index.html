@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/image.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- animation -->
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+      <!-- header design -->
+      <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+        <nav class=" p-4 flex items-center justify-between">
+            <div class="md:hidden">
+                <button id="menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="#home" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Home</a>
+                <a href="#info" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Info</a>
+                <a href="#services" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Services</a>
+                <a href="#projects" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Projects</a>
+                <a href="#contact" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Contact</a>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+            <a href="#home" class="block text-white px-4 py-2 hover:bg-gray-700">Home</a>
+            <a href="#info" class="block text-white px-4 py-2 hover:bg-gray-700">Info</a>
+            <a href="#services" class="block text-white px-4 py-2 hover:bg-gray-700">Services</a>
+            <a href="#projects" class="block text-white px-4 py-2 hover:bg-gray-700">Projects</a>
+            <a href="#contact" class="block text-white px-4 py-2 hover:bg-gray-700">Contact</a>
+        </div>
+
+    </header>
+    <main class="h-screen">
+        <div id="home" class="w-full h-full flex justify-center items-center flex-col pt-5 pl-5">
+            <h2 id="name" class="text-4xl text-nowrap">Muddassir Shadab</h2>
+            <h1 id="title" class="text-6xl font-medium text-center">A Creative Graphics Desginer</h1>
+            <p id="description" class="ml-20 mr-20 text-center">
+                Highly creative and multi-talented graphics designer with 3.5 work years of freelancing experience. <br>Proficient in industry-standard design software and passionate about creating visually compelling designs. <br> Known for a strong sense of aesthetics, excellent teamwork, and a keen eye for detail.
+            </p>
+            <button onclick="window.open('/assets/cv.pdf')" id="download-cv " class= "text-purple-700 mt-12 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900" >DOWNLOAD CV</button>
+        </div>
+    </main>
+    <div id="info" class="container mx-auto p-4 sm:p-8">
+        <!-- About Me -->
+        <div class="flex flex-col lg:flex-row justify-between items-start space-y-4 lg:space-y-0">
+
+            <div class="lg:w-1/ w-full max-w-xl ">
+                <img src="assets/about-pic.jpg" id="about-pic" class="h-auto w-auto transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0" srcset="">
+            </div>
+
+            <div class="lg:w-2/3 w-full lg:ml-6">
+                <h1 class="text-2xl sm:text-4xl font-bold">About Me</h1>
+                <p class="text-xl mt-2">I'm A Creative Grafics Desginer and Freelancer</p>
+                <p class="mt-4">Hey there!
+                    I heard you're a young graphic designer and web developer, and I just wanted to say how awesome that is! Seriously, it's inspiring to see someone your age diving into such cool fields. Embrace the learning process, don't be afraid to try new things, and remember the power of online resources and community support.
+                    Every design you create and every website you build has the potential to make a meaningful impact. Keep dreaming big, keep pushing yourself, and remember: the sky's the limit!
+                    Catch you later,</p>
+                <ul class="mt-4 space-y-1 sm:space-y-2">
+                    <li><strong>Birthday:</strong> 04.08.2006</li>
+                    <li><strong>Age:</strong> 18</li>
+                    <li><strong>City:</strong> Jamshedpur</li>
+                    <li><strong>Study:</strong> I.Com (2nd Year)</li>
+                    <li><strong>Email:</strong> muddassirshadab06@gmail.com</li>
+                    <li><strong>Phone:</strong> +918877997788</li>
+                </ul>
+                <div class="mt-4">
+                    <a href="https://wa.me/918877997788?text=Hi%2C%20I%20am%20interested%20in%20hiring%20you!" class="bg-orange-500 text-white py-2 px-4 rounded">Hire Me</a>
+                    <a onclick="window.open('/assets/cv.pdf')" class="bg-gray-700 text-white py-2 px-4 rounded ml-2">Download CV</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education & Experience -->
+        <div class="flex flex-col lg:flex-row mt-12 space-y-4 lg:space-y-0 lg:space-x-12">
+            <div class="lg:w-1/2">
+                <h2 class="text-xl sm:text-2xl font-bold">Education</h2>
+                <ul class="mt-4 space-y-2">
+                    <li>
+                        <strong>Intermediate of Commerce (I.Com)</strong> - Studying 12th
+                    </li>
+                    <li>
+                        <strong>Matriculation</strong> - First Division, 2023
+                    </li>
+                    <li>
+                        <strong>Certificate of Completion in Graphic Design Fundamentals</strong> - Coursera
+                    </li>
+                </ul>
+            </div>
+            <div class="lg:w-1/2 w-full">
+                <h2 class="text-xl sm:text-2xl font-bold">Experience</h2>
+                <ul class="mt-4 space-y-2">
+                    <li>
+                        <strong class="font-bold">In Graphic Harmony as Graphics Designer</strong> -
+                        <br>
+                        <em>Worked for 1 year</em>
+                        <br>
+                        Created designs for various print materials, collaborated with clients, and ensured high-quality results.
+                    </li>
+                    <li>
+                        <strong>In  Public Eye as Graphics Designer </strong>
+                        <br>
+                        <em>Worked for 1.5 years</em>
+                        <br>
+                        Designed layouts and graphics for the newspaper, including advertisements and editorial illustrations.
+                    </li>
+                    <li>
+                        <strong>Freelance Graphics Designer</strong> - 2019 - Present
+                        <br>
+                        Successfully completed various freelance projects involving logo design, branding, brochures, social media graphics, and website design.
+                    </li>
+                </ul>
+            </div>
+             <!-- Skills -->
+        <div class="mt-12 w-full">
+            <h2 class="text- sm:text-2xl font-bold">My Skills</h2>
+            <div class="mt-4 space-y-4">
+                <!-- Skill Bar -->
+
+                <div class="gap-x-10">
+                    <h2 class="text-xl">Adobe Creative Suite</h2>
+                    <div class=" sm:text-base">
+                        <li>Adobe Photoshop</li>
+                    </div>
+                    <div class="w-full bg-gray-700 h-2 rounded">
+                        <div class="bg-orange-500 h-2 rounded w-10" style="width: 85%;"></div>
+                    </div>
+                    <div class=" text-sm sm:text-base">
+                        <li>Adobe Illustrator</li>
+                    </div>
+                    <div class="w-full bg-gray-700 h-2 rounded ">
+                        <div class="bg-orange-500 h-2 rounded w-10" style="width: 75%;"></div>
+                    </div>
+                    <div class=" text-sm sm:text-base">
+                        <li>Adobe InDesign</li>
+                    </div>
+                    <div class="w-full bg-gray-700 h-2 rounded ">
+                        <div class="bg-orange-500 h-2 rounded w-10" style="width: 70%;"></div>
+                    </div>
+                    <div class=" text-sm sm:text-base">
+                        <li>Adobe XD</li>
+                    </div>
+                    <div class="w-full bg-gray-700 h-2 rounded ">
+                        <div class="bg-orange-500 h-2 rounded w-10" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-xl">Other Design Tools</h2>
+                    <div class=" sm:text-base">
+                        <li>CorelDRAW</li>
+                    </div>
+                    <div class="w-full bg-gray-700 h-2 rounded ">
+                        <div class="bg-orange-500 h-2 rounded w-10" style="width: 80%;"></div>
+                    </div>
+                    <div class=" text-sm sm:text-base">
+                        <li>Figma </li>
+                    </div>
+                    <div class="w-full bg-gray-700 h-2 rounded ">
+                        <div class="bg-orange-500 h-2 rounded w-10" style="width: 65%;"></div>
+                    </div>
+                    <div class=" text-sm sm:text-base">
+                        <li> Sketch </li>
+                    </div>
+                    <div class="w-full bg-gray-700 h-2 rounded ">
+                        <div class="bg-orange-500 h-2 rounded w-10" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-xl">AI-Powered Tools</h2>
+                    <div class=" sm:text-base">
+                        <li>Midjourney</li>
+                    </div>
+                    <div class="w-full bg-gray-700 h-2 rounded ">
+                        <div class="bg-orange-500 h-2 rounded w-10" style="width: 70%;"></div>
+                    </div>
+                    <div class=" text-sm sm:text-base">
+                        <li>DALL-E </li>
+                    </div>
+                    <div class="w-full bg-gray-700 h-2 rounded ">
+                        <div class="bg-orange-500 h-2 rounded w-10" style="width: 68%;"></div>
+                    </div>
+                    <div class=" text-sm sm:text-base">
+                        <li> Canva </li>
+                    </div>
+                    <div class="w-full bg-gray-700 h-2 rounded ">
+                        <div class="bg-orange-500 h-2 rounded w-10" style="width: 68%;"></div>
+                    </div>
+                    <div class=" text-sm sm:text-base">
+                        <li> Adobe Firefly </li>
+                    </div>
+                    <div class="w-full bg-gray-700 h-2 rounded ">
+                        <div class="bg-orange-500 h-2 rounded w-10" style="width: 65%;"></div>
+                    </div>
+                    <div class=" text-sm sm:text-base">
+                        <li> RunwayML </li>
+                    </div>
+                    <div class="w-full bg-gray-700 h-2 rounded ">
+                        <div class="bg-orange-500 h-2 rounded w-10" style="width: 50%;"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="services" class="h-auto min-h-auto ">
+    <div  class=" w-full flex justify-center items-center flex-col  pl-5">
+        <h2 class="text-4xl  font-semibold">services</h2>
+         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 p-10 pt-8">
+                <div class=" service-card block rounded-xl  border border-gray-100 p-4">
+                    <span class="inline-block rounded-lg p-3">
+                       <div class="inline-flex align-middle justify-center items-center select-none text-white">
+                          <img src="/assets/brand-identity.png" alt="" srcset="" class="w-16 h-auto">
+                       </div>
+                    </span>
+                    <h2 class="mt-2 font-semibold text-base sm:text-lg text-white">
+                        Branding and Identity Design
+                    </h2>
+                    <p class="sm:mt-1 block text-sm sm:text-base text-gray-300"> Creating unique brand identities that capture the essence of your business. Services include logo design, brand guidelines, business cards, and more. This service ensures that your brand is recognizable and consistent across all platforms.
+                    </p>
+                </div>
+
+                <div class=" service-card block rounded-xl  border border-gray-100 p-4">
+                    <span class="inline-block rounded-lg p-3">
+                       <div class="inline-flex align-middle justify-center items-center select-none text-white">
+                          <img src="/assets/t-shirt.png" alt="" srcset="" class="w-16 h-auto">
+                       </div>
+                    </span>
+                    <h2 class="mt-2 font-semibold text-base sm:text-lg text-white">
+                        Print Design
+                    </h2>
+                    <p class="sm:mt-1 block text-sm sm:text-base text-gray-300"> Designing eye-catching print materials such as brochures, flyers, posters, and packaging to effectively communicate your message and attract customers. This service covers all aspects of print media, ensuring high-quality and impactful designs.
+                    </p>
+                </div>
+
+                <div class=" service-card block rounded-xl  border border-gray-100 p-4">
+                    <span class="inline-block rounded-lg p-3">
+                       <div class="inline-flex align-middle justify-center items-center select-none text-white">
+                          <img src="/assets/ux.png" alt="" srcset="" class="w-16 h-auto">
+                       </div>
+                    </span>
+                    <h2 class="mt-2 font-semibold text-base sm:text-lg text-white">
+                        UI/UX Design
+                    </h2>
+                    <p class="sm:mt-1 block text-sm sm:text-base text-gray-300">
+                        Developing user-friendly interfaces for websites and mobile applications, ensuring a seamless user experience through effective wireframing, prototyping, and user testing. This service focuses on creating intuitive and engaging digital experiences.
+                    </p>
+                </div>
+
+                <div class=" service-card block rounded-xl  border border-gray-100 p-4">
+                    <span class="inline-block rounded-lg p-3">
+                       <div class="inline-flex align-middle justify-center items-center select-none text-white">
+                          <img src="/assets/pie-chart.png" alt="" srcset="" class="w-16 h-auto">
+                       </div>
+                    </span>
+                    <h2 class="mt-2 font-semibold text-base sm:text-lg text-white">
+                        Social Media Graphics
+                    </h2>
+                    <p class="sm:mt-1 block text-sm sm:text-base text-gray-300">
+                        Creating engaging graphics for social media platforms to enhance your online presence and increase audience engagement. This includes designing posts, banners, ads, and stories that are visually appealing and on-brand.
+                    </p>
+                </div>
+
+                <div class=" service-card block rounded-xl  border border-gray-100 p-4">
+                    <span class="inline-block rounded-lg p-3">
+                       <div class="inline-flex align-middle justify-center items-center select-none text-white">
+                          <img src="/assets/art.png" alt="" srcset="" class="w-16 h-auto">
+                       </div>
+                    </span>
+                    <h2 class="mt-2 font-semibold text-base sm:text-lg text-white">
+                        Digital Illustration
+                    </h2>
+                    <p class="sm:mt-1 block text-sm sm:text-base text-gray-300">
+                        Creating detailed and visually appealing digital illustrations for various purposes such as books, advertisements, websites, and more. This service includes custom artwork that enhances your content and captures the viewer's attention.                    </p>
+                </div>
+
+                <div class=" service-card block rounded-xl  border border-gray-100 p-4">
+                    <span class="inline-block rounded-lg p-3">
+                       <div class="inline-flex align-middle justify-center items-center select-none text-white">
+                          <img src="/assets/design.png" alt="" srcset="" class="w-16 h-auto">
+                       </div>
+                    </span>
+                    <h2 class="mt-2 font-semibold text-base sm:text-lg text-white">
+                        Packaging Design
+                    </h2>
+                    <p class="sm:mt-1 block text-sm sm:text-base text-gray-300">
+                        Designing attractive packaging that not only protects your product but also enhances its visual appeal and marketability. This service includes creating packaging that stands out on the shelves and aligns with your brand identity.
+                    </p>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="projects" class=" h-auto flex justify-start items-center flex-col pl-5">
+    <div id="projects-div flex justify-center ">
+        <h1 class=" text-center text-3xl font-bold text-white">Recent Projects</h1>
+        <div class="project grid grid-cols-1  sm:grid-cols-4 gap-4 flex pb-10 ">
+            <div class="w-auto"> <iframe src="https://www.behance.net/embed/project/201414377?ilo0=1" height="200" width="300" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin" class="rounded-lg mr-8 mt-4"></iframe> </div>
+            <div class="w-auto"> <iframe src="https://www.behance.net/embed/project/201420183?ilo0=1" height="200" width="300" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"  class="rounded-lg mr-8 mt-4"></iframe> </div>
+            <div class="w-auto"> <iframe src="https://www.behance.net/embed/project/201409455?ilo0=1" height="200" width="300" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"  class="rounded-lg mr-8 mt-4"></iframe> </div>
+            <div class="w-auto"> <iframe src="https://www.behance.net/embed/project/201407877?ilo0=1" height="200" width="300" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin" class="rounded-lg mr-8 mt-4" ></iframe> </div>
+         </div>
+        </div>
+        <div id="project-gallery ">
+            <h2 class="text-3xl font-bold text-white-900 mb-4 text-center"> Works Gallery </H2>
+                <div class="scroller h-auto" data-direction="right" data-speed="slow">
+                    <div class="scroller__inner h-auto">
+                        <img src="https://iili.io/d26nx8N.md.png" alt="d26nx8N.md.png" border="0" class="h-32  w-auto rounded-md">
+                        <img src="https://iili.io/d26nI9I.md.png" alt="d26nI9I.md.png" border="0" class="h-32  w-auto rounded-md">
+                        <img src="https://iili.io/d26nnFR.md.jpg" alt="d26nnFR.md.jpg" border="0" class="h-32  w-auto rounded-md">
+                        <img src="https://iili.io/d26noap.md.png" alt="d26noap.md.png" border="0" class="h-32  w-auto rounded-md">
+                        <img src="https://iili.io/d26nAtn.md.jpg" alt="d26nAtn.md.jpg" border="0" class="h-32  w-auto rounded-md">
+                        <img src="https://iili.io/d26nTut.md.jpg" alt="d26nTut.md.jpg" border="0" class="h-32  w-auto rounded-md">
+                        <img src="https://iili.io/d26nuwX.md.jpg" alt="d26nuwX.md.jpg" border="0" class="h-32  w-auto rounded-md">
+                        <img src="https://iili.io/d26n5ns.md.jpg" alt="d26n5ns.md.jpg" border="0" class="h-32  w-auto rounded-md">
+                        <img src="https://iili.io/d26nYPf.md.jpg" alt="d26nYPf.md.jpg" border="0" class="h-32  w-auto rounded-md">
+                        <img src="https://iili.io/d26n7MG.md.jpg" alt="d26n7MG.md.jpg" border="0" class="h-32  w-auto rounded-md">
+                        <img src="https://iili.io/d26nlcl.md.jpg" alt="d26nlcl.md.jpg" border="0" class="h-32  w-auto rounded-md">
+                        <img src="https://iili.io/d26ncF4.md.jpg" alt="d26ncF4.md.jpg" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26nE9S.md.jpg" alt="d26nE9S.md.jpg" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26n0S2.md.jpg" alt="d26n0S2.md.jpg" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26nMN9.md.jpg" alt="d26nMN9.md.jpg" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26nGA7.md.jpg" alt="d26nGA7.md.jpg" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26nhMb.md.jpg" alt="d26nhMb.md.jpg" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26nVte.md.jpg" alt="d26nVte.md.jpg" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26njPj.md.jpg" alt="d26njPj.md.jpg" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26nXou.md.jpg" alt="d26nXou.md.jpg" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26nvHB.md.jpg" alt="d26nvHB.md.jpg" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26nNKx.md.jpg" alt="d26nNKx.md.jpg" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26n8AP.md.jpg" alt="d26n8AP.md.jpg" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26nOcQ.md.jpg" alt="d26nOcQ.md.jpg" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26nSN1.md.jpg" alt="d26nSN1.md.jpg" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26neSV.md.jpg" alt="d26neSV.md.jpg" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26nUDF.md.jpg" alt="d26nUDF.md.jpg" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26nrog.md.jpg" alt="d26nrog.md.jpg" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26nDNt.md.png" alt="d26nDNt.md.png" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26n6iJ.md.png" alt="d26n6iJ.md.png" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26n4Va.md.jpg" alt="d26n4Va.md.jpg" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26niKv.md.png" alt="d26niKv.md.png" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26nLSp.md.png" alt="d26nLSp.md.png" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26nslR.md.png" alt="d26nslR.md.png" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26ntRI.md.png" alt="d26ntRI.md.png" border="0" class="h-44  w-auto rounded-md">
+                        <img src="https://iili.io/d26nZHN.md.png" alt="d26nZHN.md.png" border="0" class="h-44  w-auto rounded-md">
+                  </div>
+            </div>
+        </div>
+<div id="contact" class="w-auto h-auto">
+    <section class="py-8 lg:py-16 px-4 mx-auto max-w-screen-sm sm:px-0">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-sm sm:px-0">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-white-900 dark:text-white">Contact Us</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                    <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                </div>
+                <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+            </form>
+        </div>
+      </section>
+        <footer class="text-center mt-6 text-gray-600">
+            <p>&copy; 2024 Muddassir Shadab. All Rights Reserved.</p>
+        </footer>
+    </div>
+</div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</body>
+</html>
